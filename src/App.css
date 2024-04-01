@@ -4,12 +4,15 @@
   gap: 20px;
   padding: 40px;
     background-image: url(./assets/todo.jpg);
+    background-position: center;
+    background-size: cover;
     
   /* border: 2px solid red; */
 }
 
 .note-container{
   /* width: 50%; */
+
 
 }
 
@@ -31,10 +34,11 @@
 }
 
 .sidebar {
-  display: flex;
+  display: block;
   flex-direction: row;
   gap: 40px; 
   /* border: 2px solid red; */
+  /* margin-left: 5rem; */
   
 }
 
@@ -42,6 +46,7 @@
   width: 6rem;
   height: 6rem;
   cursor: pointer;
+  
 }
 
 
@@ -63,6 +68,8 @@
   height: 24px;
   width: 24px;
   list-style: none;
+  /* border: 2px solid red; */
+
 }
 
 .note-container {
@@ -116,4 +123,16 @@
 
 .note:hover .note_footer img {
   opacity: 1;
+}
+
+@media (max-width:500px) {
+  .App{
+    /* overflow: scroll; */
+    width: 85%;
+    display: flex;
+  }
+  .note{
+    width: 70%;
+    height: 50%;
+  }
 }

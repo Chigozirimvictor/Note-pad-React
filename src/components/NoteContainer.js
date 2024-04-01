@@ -17,7 +17,7 @@ function NoteContainer(props) {
 
   return (
     <div className="note-container">
-      <h2>Notes</h2>
+      <h1>NOTES</h1>
       <div className="note-container_notes custom-scroll">
         {notes?.length > 0 ? (
           notes.map((item) => (
@@ -29,7 +29,7 @@ function NoteContainer(props) {
             />
           ))
         ) : (
-          <h3>Choose Any of The Colour To Start</h3>
+          <h2>Choose Any of The Colour To Start</h2>
           // ( <h3> Theres Note</h3>)
         )}
       </div>

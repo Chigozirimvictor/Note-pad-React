@@ -3,7 +3,7 @@ import React, { useState } from "react";
  import plusIcon from "../assets/plus.png"
 
 function Sidebar(props) {
-  const colors = ["#fe9b72", "#fec971", " #00d4fe", "#b693fd", "#e4ee91"];
+  const colors = ["red", "gold", " Blue", "white", "violet"];
 
   const [listOpen, setListOpen] = useState(false);
 
